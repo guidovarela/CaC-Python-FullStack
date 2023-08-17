@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 1</title>
+</head>
+<body>
+
+    <h1>Formularios HTML</h1>
+
+    <form action="mailto:mail@mail.com" method="POST">
+
+        <!-- Nombre, email, fecha, localidad, genero -->
+
+        <!-- Nombre -->
+        <div>
+            <label>
+                Nombre
+                <br>
+                <input type="text" name="nombre" required>
+            </label>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="campoEmail">Email</label>
+            <br>
+            <input type="email" name="email" id="campoEmail" required>
+        </div>
+
+        <!-- Localidad -->
+
+        <div>
+            <label>
+                Provincia
+                <select name="localidad" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="CABA">CABA</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Rios">Entre Rios</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquen">Neuquen</option>
+                    <option value="Rio Negro">Rio Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucuman">Tucuman</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="campoFecha">Fecha</label>
+            <input type="date" name="fecha" id="campoFecha" required>
+        </div>
+
+        <div>
+            Género
+            <label>
+                <input type="radio" name="genero" value="f" required >
+                Femenino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="m" required>
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="ns/nc" required >
+                Deseo no contestar
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Mensaje
+                <br>
+                <textarea name="mensaje" id="" cols="30" rows="5" required></textarea>
+            </label>
+        </div>        
+        
+        <div>
+            <label>
+                <input type="checkbox" name="permiso" value="true" required>
+                Acepto los terminos y condiciones del sitio
+            </label>
+        </div>
+        
+        <button type="submit">Envia info</button>
+
+        
+    </form>
+
+
+    
+</body>
+</html>
