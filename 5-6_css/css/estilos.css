@@ -1,0 +1,125 @@
+
+/* Fonts Google */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@100;500;600&display=swap');
+
+/* Iconos - FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* 
+Un documento CSS no lleva contenido
+
+        Selector de Etiqueta
+        con la , agrupamos selectores */
+        /* Selectores
+        selector {
+            propiedad:valor;
+        }        
+        */
+        body{
+            background-color: rgb(16, 177, 222);
+            text-align: center;
+            }
+            h1,h2,h3{ 
+                color: rgb(255, 99, 71);
+                text-align: right;
+                
+            }
+
+            h1{
+                font-family: 'Black Ops One',"Impact", cursive;
+                text-transform: uppercase;
+            }
+            /* Selector de Clase
+            prefijo es el .
+            son reutilizables            
+            */
+            p{
+                color: rgb(44, 16, 113);
+                text-decoration: underline;
+            }
+            .textos{
+                text-align: left;
+                color: white;
+                background-color: rgb(0, 115, 255);
+                font-size: 32px;
+                /* text-transform: lowercase; */
+            }
+
+            /* Selector de ID
+            prefijo -> #
+            solo se usan 1 vez
+            */  
+            #header,#footer{
+                background-color: white;
+                padding: 10px;
+                text-align: center;
+                
+            }
+
+            /* Selector Universal 
+
+            *{
+                
+            }*/
+
+
+            .cita1{
+                background-color: rgb(255, 255, 255);
+                font-style: italic;
+            }
+
+        .imagen-contenedor{
+            width: 50%;
+        }
+        .imagen-soap{
+            /* width: 200px; */
+            width: 100%;
+        }
+        /* width / min-width /max-width */
+
+        #main-content{
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+
+        /* seccion 3 */
+
+        #header3{
+            /* width: 100%; */
+            background-color: azure;
+            /* espaciado interior */
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .titulo-noticia{
+        text-align: left;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: "Montserrat";
+        font-weight: 600;            
+        }
+        .p-noticia{
+            text-decoration: none;
+            color: white;
+            text-align: left;
+            font-family: 'Montserrat';
+            font-weight: 500;  
+        }
+
+        .redes-icon{
+            font-size: 2em;
+            color: black;
+        }
+        .redes a{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
