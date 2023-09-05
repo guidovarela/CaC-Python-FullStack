@@ -59,7 +59,36 @@ html{
             .list-navbar>li>a{
                 text-decoration: none;
                 color: white;
+                padding: 10px;
+                transition: 1s;
             }
+            .list-navbar>li>a:hover{
+                color: tomato;
+                    background-color: white;
+                }
+                .list-navbar>li>a:active{
+                    color: tomato;
+                    background-color: rgb(114, 40, 8);
+                }
+
+
+    /* 
+    pseudoclase
+    selector:pseudoclase
+    :hover
+    
+    Pseudoelemento
+    selector::pseudelemento
+    
+    ::selection
+    ::before -> antes            
+    ::after -> despues
+    
+    */
+
+    ::selection{
+        background-color: white;
+    }
 
 
     #noticias{
@@ -75,8 +104,33 @@ html{
             background-color: rgba(255, 255, 255, 0.566);
             color: black;
             margin-bottom: 20px;
+            transition: 1s;
+        }
+        .noticias:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        .noticias:active{
+            transform: scale(1.1,1.1);
+        }
+        .noticias h2::before{
+            content: "🚗";
+            /* content: "f1ea"; */
         }
 
+        /* todo elemento con hover, debe tener transition en su elemento original */
+
+        section a, section strong:hover{
+            text-decoration: underline;
+        }
+
+        #noticias p>strong{
+            color: red;
+        }
+
+        /* drag and drop HTML */
+
+        /* *{cursor: url("cursor.gif");} */
 
     #sorpresa{
         background-color: rgb(219, 219, 219);
@@ -85,8 +139,21 @@ html{
         #sorpresa>p{
             margin-bottom: 20px;
         }
+
+        #sorpresa p:nth-child(odd){
+            font-weight: bold;
+            color: rgb(31, 31, 31);
+        }
+        #sorpresa p:nth-child(even){
+            font-weight: bold;
+            color: rgb(179, 179, 179);
+        }
+
     #contacto{
         background-color: rgb(255, 191, 0);
         padding: 20px;
         height: 90vh;
     }
+
+
+
