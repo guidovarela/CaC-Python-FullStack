@@ -1,0 +1,109 @@
+/* Fonts Google */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@100;500;600&display=swap');
+
+/* Iconos - FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+
+html{
+    font-family: "Montserrat";
+    font-size: 16px;
+    scroll-behavior:smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    background: tomato;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo{
+        /* width: 10%; */
+        text-align: left;
+    }
+    .search{}
+    .navbar{ width: 20%;}
+    .navbar ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        }
+
+/* Flexbox */
+
+#cajas1{
+    width: 80%;
+    max-width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    }
+    .flex-item{
+        padding: 2%;
+        background-color: rgb(255, 187, 0);
+        margin-bottom: 10px;
+        width: 24%;
+    }
+    /* .flex-container div:last-child{
+        width: 100%;
+    } */
+
+/* Media Queries
+@media disp operador (propiedad:valor){
+    --
+} 
+*/
+
+/* dispositivos pequeños */
+@media screen and (min-width:0px) and (max-width:672px){
+    
+    body{
+        background-color: aqua;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    #cajas1{width: 90%;}
+
+    .flex-container{
+        flex-direction: column;
+        }
+        .flex-item{
+            width: 100%;
+        }
+    
+}
+/* dispositivos medianos */
+@media screen and (min-width:673px) and (max-width:990px) {
+    body{
+        background-color: rgb(4, 0, 255);
+    }
+
+    .flex-item{width: 49%;}
+}
+
+/* dispositivos grandes */
+@media screen and (min-width: 991px) and (max-width: 1296px) {
+        body{
+        background-color: rgb(26, 255, 0);
+    }
+}
+
+/* Disp. Extra grandes -> min-width1297px*/
