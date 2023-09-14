@@ -1,0 +1,87 @@
+## Flexbox Froggy (https://flexboxfroggy.com/#es)
+# Respuestas
+
+-------------------------------------
+
+1.
+justify-content: flex-end;
+
+2.
+justify-content: center;
+
+3.
+justify-content: space-around;
+
+4.
+justify-content: space-between;
+
+5.
+align-items: flex-end;
+
+6.
+align-items: center;
+justify-content: center;
+
+7.
+justify-content: space-around;
+
+8.
+flex-direction: row-reverse;
+
+9.
+flex-direction: column;
+
+10.
+lex-direction: row-reverse;
+justify-content: flex-end;
+
+11.
+lex-direction: column;
+justify-content: flex-end;
+
+12.
+lex-direction: column-reverse;
+justify-content: space-between;
+
+13.
+lex-direction: row-reverse;
+justify-content: center;   
+align-items: flex-end;
+
+14.
+rder: 1;
+
+15.
+rder: -3;
+
+16.
+lign-self: flex-end;
+
+17.
+lign-self: flex-end;
+order: 1;
+
+18.
+lex-wrap: wrap;
+
+19.
+lex-direction: column;
+flex-wrap: wrap;
+
+20.
+lex-flow: column wrap;
+
+21.
+lign-content: flex-start;
+
+22.
+lign-content: flex-end;
+
+23.
+lex-direction: column-reverse;
+align-content: center; 
+
+24.
+lex-flow:column-reverse wrap-reverse;
+justify-content:center;
+align-content:space-between;
