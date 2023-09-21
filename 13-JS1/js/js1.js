@@ -16,6 +16,27 @@ Verificar el tipo de dato con typeof()*/
 // Dos formas con: + y ,
 
 
+//+ operador aritmetico -> sumar o es un concatenador
+
+
+//cuadros de dialogo
+//alert()
+//prompt()
+//confirm()
+
+/*
+var nombre = prompt("Cual es tu nombre?")
+var apellido = prompt("y cual es tu apellido?")
+
+console.log(nombre+apellido)
+document.write("Hola "+nombre,apellido)
+*/
+
+var iva = 0.21
+var precio = parseInt(prompt("Cual es el precio del producto?"))
+var precioFinal = precio*iva + precio
+
+document.write("El precio total es "+precioFinal)
 
 
 //---3. Definir una constante--------
