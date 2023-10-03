@@ -5,8 +5,9 @@ function calculadora(){
     let num2 = parseFloat(prompt("Ingresar el 2do numero"))
     let signo = prompt("Elegir la operacion: / * + -")
     
-    if(signo == "/" || signo == "*" || signo == "+" || signo == "-"){ 
-        
+    //if(signo == "/" || signo == "*" || signo == "+" || signo == "-"){ 
+    if(signo == "/" || "*" || "+" || "-"){ 
+    
         switch(signo){
             case "/": resultado = num1 / num2
             break
