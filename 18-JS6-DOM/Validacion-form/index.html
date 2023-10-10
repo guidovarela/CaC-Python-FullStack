@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni"><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p> </p>
+    <p>El <b>código JavaScript</b> que valida este formulario define una función llamada <b>validarFormulario</b>, que se ejecuta cuando se envía el formulario. Dentro de esta función, se obtienen los valores ingresados por el usuario utilizando la propiedad <b>value</b> de los elementos del formulario correspondientes. Luego, se verifican si los campos están en blanco utilizando la comparación <b>=== ""</b>.</p>
+    <p>Para validar el campo de nombre, se utiliza un <b>bucle for</b> que recorre cada carácter de la cadena de nombre. Se utiliza la función <b>charCodeAt</b> para obtener el código Unicode del carácter en la posición actual y se verifica si es un carácter alfabético (A-Z o a-z) o un espacio ( ). Si el carácter no cumple con estas condiciones, se muestra una alerta y se devuelve <b>false</b>.</p>
+    <p>Para validar el campo de DNI, se verifica si la longitud es exactamente 8 dígitos y luego se utiliza otro <b>bucle</b> for para verificar si cada carácter es un dígito numérico (0-9). Si el campo no cumple con estas condiciones, se muestra una alerta y se devuelve <b>false</b>.</p>
+    <p>Finalmente, si todas las validaciones son exitosas, se muestra una alerta indicando que el formulario se envió correctamente y se devuelve <b>true</b>.</p>
+
+
+    <script src="validacion.js"></script>
+</body>
+
+</html>

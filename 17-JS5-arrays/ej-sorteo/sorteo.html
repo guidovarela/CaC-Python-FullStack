@@ -15,12 +15,19 @@
 
 
     <div id="sorteo">
-        <button class="btn-sorteo" onclick="sorteo()">Realizar Sorteo!</button>
+        
+        <form id="formSorteo">
+            <input type="number" name="numeros" id="campoNumeros" required>
+            <input type="submit" id="" class="btn-sorteo" value="Realizar Sorteo!">
+        </form>
+        
         <div class="res-sorteo">
             <p class="titulo-resultado"></p>
             <p class="nro-ganador"></p>
             <p class="posibles"></p>
         </div>
+
+        <div class="numerosSorteados"></div>
         
         <h2 id="sorteo"></h2>
     </div>

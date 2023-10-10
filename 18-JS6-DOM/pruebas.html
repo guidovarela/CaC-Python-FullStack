@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="cabecera" name="h1">DOM</h1>
+
+    <script>
+        let titulo = document.getElementsByName("h1")
+        //console.log(titulo[0])
+        titulo[0].style.color="red"
+
+        //crear un elemento
+        let nuevoDiv = document.createElement("div")
+        let dataNuevoDiv = document.createTextNode("Esto es un contenido creado por JS version 2")
+        
+        let nuevoLink = document.createElement("a")
+        nuevoLink.setAttribute("href","http://google.com")
+        let dataNuevoLink = document.createTextNode("Ingresar a Google")
+        nuevoLink.appendChild(dataNuevoLink)
+
+        document.body.appendChild(nuevoLink)
+        
+    </script>
+
+</body>
+</html>
