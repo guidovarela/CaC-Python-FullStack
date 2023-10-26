@@ -1,3 +1,14 @@
+
+host: localhost
+user: root
+pass: (vacio)
+port: 3306
+
+//CRUD - Create Read Update Delete
+
+
+CREATE DATABASE usuarios
+
 CREATE TABLE borrar ( id INT NOT NULL , nombre VARCHAR(100) NOT NULL , email VARCHAR(100) NOT NULL , activo BOOLEAN NOT NULL )
 
 drop table borrar
