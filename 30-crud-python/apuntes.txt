@@ -1,0 +1,47 @@
+
+MSDOS: comandos basicos:
+https://www.ionos.es/digitalguide/servidores/know-how/comandos-ms-dos/
+
+Documentacion:
+Flask: https://flask.palletsprojects.com/en/3.0.x/
+
+Jinja2:https://jinja.palletsprojects.com/en/3.1.x/templates/
+
+pip list
+pip install Flask
+
+py -3 -m venv .venv
+
+cd .venv/Scripts/
+
+activate
+
+# Creamos el dir app y creamos dentro app.py
+
+	# importamos las clase Flask
+	from flask import Flask
+
+	# inicializamos la app
+	app=Flask(__name__)
+
+	# comprobamos la ubicacion de inicio
+	if __name__=="__main__":
+    		app.run()
+
+
+
+#creamos una ruta y enviamos contenido
+@app.route('/')
+def index():
+    # devuelve un texto plano con formato HTML
+    return "Esto es Flask!"
+
+Crear una vista
+1- crear el HTML dentro de la carpeta "templates"
+2- importar la clase render_template
+3- devolver la vista: return render_template('vista.html')
+
+Archivos externos (CSS, IMG, JS)
+1- crear una carpeta 'static', y subidividir segun formato
+2- en cada src o href:
+	{{url_for('static', filename='css/styles.css')}}
