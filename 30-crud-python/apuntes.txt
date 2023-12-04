@@ -45,3 +45,11 @@ Archivos externos (CSS, IMG, JS)
 1- crear una carpeta 'static', y subidividir segun formato
 2- en cada src o href:
 	{{url_for('static', filename='css/styles.css')}}
+
+
+Backup Dependencias
+Genear bkp
+pip freeze > requirements.txt
+
+instalar bkp
+pip install -r requirements.txt
