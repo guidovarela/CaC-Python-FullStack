@@ -1,7 +1,7 @@
-# CaC-Python-front
-Archivos del curso Full Stack Python, de Codo a Codo 4.0. 
+# Codo a Codo - Full Stack Python
+Archivos del curso, Codo a Codo 4.0, 2do cuatrimestre 2023 
 
-## Modulo Front End
+## Modulo Front End + Backend
 
 ### <a href="https://aulasvirtuales.bue.edu.ar">Aula Virtual</a>
 
