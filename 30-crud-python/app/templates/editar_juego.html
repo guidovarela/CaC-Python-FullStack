@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    {% include 'defaults/head.html'%}
+</head>
+
+<body>
+    {% include 'defaults/header.html'%}
+    
+    <section class="section">
+    <div class="columns">
+        <div class="column">
+
+            <div class="w-75 mx-auto">
+
+                <h3 class="is-size-3"><i class="bi bi-pencil-fill"></i> Editar producto</h3>
+                
+                <form action="{{url_for('actualizar_juego')}}" method="post">
+                    {# Enviar el id en un campo oculto #}
+                    <input type="hidden" name="id" value="{{juego[0]}}">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input value="{{juego[1]}}" required type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="descripcion">Descripción</label>
+                        <input value="{{juego[2]}}" required type="text" class="form-control" placeholder="Descripción" name="descripcion" id="descripcion">
+                    </div>
+                    <div>
+                        <label for="precio">Precio</label>
+                        <input value="{{juego[3]}}" required type="number" class="form-control" placeholder="Precio" name="precio" id="precio">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Guardar cambios</button>
+                    <a href="{{url_for('juegos')}}" class="btn btn-link mt-2">Volver</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% include 'defaults/footer.html'%}
+    {% include 'defaults/scripts.html'%}
+</body>
+</html>

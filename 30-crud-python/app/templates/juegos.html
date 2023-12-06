@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    {% include 'defaults/head.html' %}
+</head>
+
+<body>
+    {% include 'defaults/header.html'%}
+
+    <div class="container">
+
+        <section class="section">
+            <div class="">
+                <div class="">
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="is-size-3">{{title}}</h3>
+                        </div>
+                        <div class="col">
+                            <a href="{{url_for('formulario_agregar_juego')}}" class="btn btn-info"><i class="bi bi-plus-circle"></i> Nuevo Producto</a>
+                        </div>
+                    </div>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                                <th>Editar</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for juego in juegos %}
+                            <tr>
+                                <td>{{juego[1]}}</td>
+                                <td>{{juego[2]}}</td>
+                                <td>{{juego[3]}}</td>
+                                <td>
+                                    {# Pasar el id (lo que hay en juego[0] #}
+                                    <a href="{{url_for('editar_juego', id=juego[0])}}" class="btn btn-warning"><i class="bi bi-pencil-fill"></i></a>
+                                </td>
+                                <td>
+                                    <form action="{{url_for('eliminar_juego')}}" method="POST">
+                                        <input type="hidden" name="id" value="{{juego[0]}}">
+                                        <button class="btn btn-danger" id="eliminar" onclick="return eliminarProd()"><i class="bi bi-trash-fill"></i></button>
+                                    </form>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    {% include 'defaults/footer.html'%}
+    {% include 'defaults/scripts.html'%}
+
+</body>
+</html>

@@ -1,3 +1,6 @@
-// codigo JS
+// preguntar Eliminar
 
-console.log("Funciona!")
+    function eliminarProd(){
+        data = confirm("Estas seguro de eliminar este item?")
+        return data
+    }
